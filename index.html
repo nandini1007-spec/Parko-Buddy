@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARK-O-BUDDY — Plan. Pay. Park.</title>
+  <meta name="description" content="PARK-O-BUDDY is a modern parking marketplace connecting Parkers and Hosts. Tagline: PLAN. PAY. PARK.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🅿️</text></svg>">
+</head>
+<body>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🅿️</div>
+        <span>PARK-O-<span class="buddy">BUDDY</span></span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="search.html" class="nav-link">Find Parking</a></li>
+        <li><a href="host.html" class="nav-link">Rent Parking</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="auth.html" class="btn btn-outline btn-sm">Log In</a>
+        <a href="auth.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT: HOME -->
+  <main>
+    <section class="page-view">
+      <div class="container hero">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <div class="eyebrow">SMART PARKING, MADE SIMPLE</div>
+            <h1 class="hero-title">Find a spot.<br>Park with <span class="text-green">ease.</span></h1>
+            <p class="hero-subtitle">Find nearby parking spaces or earn from your vacant spot — all in one simple platform.</p>
+            
+            <div class="hero-cta">
+              <a href="search.html" class="btn btn-primary btn-lg">Find Parking</a>
+              <a href="host.html" class="btn btn-secondary btn-lg">Rent My Space</a>
+            </div>
+
+            <div class="trust-indicators">
+              <div class="trust-item">✓ Easy booking</div>
+              <div class="trust-item">✓ Verified spaces</div>
+              <div class="trust-item">✓ Transparent pricing</div>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-mockup-card">
+              <div class="mockup-header">
+                <strong>Live Spot Map — Cyber Hub</strong>
+                <span class="badge badge-green">4 Spots Open</span>
+              </div>
+              <div class="mockup-map">
+                <div class="map-road road-h"></div>
+                <div class="map-road road-v"></div>
+                <div class="map-pin pin-1">₹30/hr</div>
+                <div class="map-pin pin-2 active">₹40/hr</div>
+                <div class="map-pin pin-3">₹50/hr</div>
+              </div>
+              <div class="floating-spot-card">
+                <div>
+                  <div class="spot-tag">Parking available nearby</div>
+                  <div class="spot-title">Green View Parking</div>
+                  <div class="spot-meta">📍 0.3 km away · Covered · CCTV</div>
+                </div>
+                <div class="spot-price-box">
+                  <div class="spot-price">₹40<span class="per-hr">/hr</span></div>
+                  <a href="slot.html" class="btn btn-primary btn-sm">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prominent Hero Search Card -->
+        <div class="search-card">
+          <h3 class="search-card-title">📍 Where do you want to park?</h3>
+          <form action="search.html" method="GET">
+            <div class="search-grid">
+              <div class="form-group">
+                <label class="form-label">Location</label>
+                <input type="text" name="location" class="form-input" placeholder="Enter city, area, landmark" value="Cyber City, Tech Park">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Date</label>
+                <input type="date" name="date" class="form-input" value="2026-09-10">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Check-in</label>
+                <input type="time" name="checkin" class="form-input" value="09:00">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Check-out</label>
+                <input type="time" name="checkout" class="form-input" value="13:00">
+              </div>
+              <div class="form-group search-btn-wrap">
+                <button type="submit" class="btn btn-primary btn-full">Search Parking &rarr;</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- How It Works Section -->
+      <section class="section section-white">
+        <div class="container">
+          <div class="section-title-wrap">
+            <h2>HOW IT WORKS</h2>
+            <p class="text-muted">Reserve guaranteed parking in 3 easy steps.</p>
+          </div>
+          <div class="how-grid">
+            <div class="how-card">
+              <div class="step-num">01</div>
+              <h3>Find</h3>
+              <p>Search for available private or commercial parking spots near your destination with real-time rates.</p>
+            </div>
+            <div class="how-card">
+              <div class="step-num">02</div>
+              <h3>Book</h3>
+              <p>Choose your preferred parking slot from our interactive grid and pay securely online.</p>
+            </div>
+            <div class="how-card">
+              <div class="step-num">03</div>
+              <h3>Park</h3>
+              <p>Arrive at the location, scan your digital QR pass, park hassle-free, and enjoy your day.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container text-center">
+      <h3>PARK-O-<span class="buddy">BUDDY</span></h3>
+      <p>PLAN. PAY. PARK.</p>
+      <p class="text-muted" style="margin-top: 10px;">&copy; 2026 PARK-O-BUDDY Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

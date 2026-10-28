@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Parking — PARK-O-BUDDY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🅿️</text></svg>">
+</head>
+<body>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🅿️</div>
+        <span>PARK-O-<span class="buddy">BUDDY</span></span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="search.html" class="nav-link active">Find Parking</a></li>
+        <li><a href="host.html" class="nav-link">Rent Parking</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="auth.html" class="btn btn-outline btn-sm">Log In</a>
+        <a href="auth.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT: FIND PARKING -->
+  <main>
+    <div class="container" style="padding: 40px 20px;">
+      <!-- Search Filter Header -->
+      <div class="card" style="margin-bottom: 30px; padding: 24px;">
+        <h2 style="margin-bottom: 16px;">Find verified parking spaces</h2>
+        <form action="search.html" method="GET">
+          <div class="form-row" style="grid-template-columns: 2fr 1fr 1fr 1fr 1fr; align-items: end;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">📍 Destination Location</label>
+              <input type="text" class="form-input" value="Cyber City, Tech Park Phase 2">
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">📅 Date</label>
+              <input type="date" class="form-input" value="2026-09-10">
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">🕘 Check-in</label>
+              <input type="time" class="form-input" value="09:00">
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">🕘 Check-out</label>
+              <input type="time" class="form-input" value="13:00">
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <button type="submit" class="btn btn-primary btn-full">Update</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Results Header -->
+      <h2>Available Parking Spaces</h2>
+      <p class="text-muted">Showing 3 verified spots in <strong>Cyber City, Tech Park</strong></p>
+
+      <!-- Filter Chips -->
+      <div class="filters-bar">
+        <button class="filter-chip active">All Spots</button>
+        <button class="filter-chip">Price: Low to High</button>
+        <button class="filter-chip">Distance &lt; 0.5 km</button>
+        <button class="filter-chip">Covered Parking</button>
+        <button class="filter-chip">⚡ EV Charging</button>
+        <button class="filter-chip">⭐ Rating 4.5+</button>
+      </div>
+
+      <!-- Results Grid & Map -->
+      <div class="results-layout">
+        <!-- Left Listings -->
+        <div class="listings-grid">
+          <div class="parking-card">
+            <div class="card-icon">🅿️</div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h4>Green View Parking</h4>
+                <span class="rating">⭐ 4.8</span>
+              </div>
+              <div class="text-muted">📍 0.3 km away · Cyber City Block A</div>
+              <div class="tags" style="margin-top: 8px;">
+                <span class="badge badge-green">Covered</span> 
+                <span class="badge badge-grey">CCTV</span>
+              </div>
+              <div class="card-footer-row">
+                <div class="price">₹40<span>/hr</span></div>
+                <a href="slot.html" class="btn btn-primary btn-sm">View Space</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="parking-card">
+            <div class="card-icon">🏬</div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h4>Metro Mall Basement Spot</h4>
+                <span class="rating">⭐ 4.6</span>
+              </div>
+              <div class="text-muted">📍 0.5 km away · Metro Mall Gate 3</div>
+              <div class="tags" style="margin-top: 8px;">
+                <span class="badge badge-green">Covered</span> 
+                <span class="badge badge-coral">⚡ EV Charging</span>
+              </div>
+              <div class="card-footer-row">
+                <div class="price">₹30<span>/hr</span></div>
+                <a href="slot.html" class="btn btn-primary btn-sm">View Space</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="parking-card">
+            <div class="card-icon">🏢</div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h4>Tech Park Executive Garage</h4>
+                <span class="rating">⭐ 4.9</span>
+              </div>
+              <div class="text-muted">📍 0.1 km away · Tech Park Plaza</div>
+              <div class="tags" style="margin-top: 8px;">
+                <span class="badge badge-green">Underground</span> 
+                <span class="badge badge-grey">CCTV</span>
+              </div>
+              <div class="card-footer-row">
+                <div class="price">₹50<span>/hr</span></div>
+                <a href="slot.html" class="btn btn-primary btn-sm">View Space</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Map Graphic -->
+        <div class="map-wrapper">
+          <div class="map-box">
+            <div class="map-grid-bg"></div>
+            <div class="map-price-pin active" style="top: 35%; left: 45%;">🅿️ ₹40</div>
+            <div class="map-price-pin" style="top: 25%; left: 70%;">🏬 ₹30</div>
+            <div class="map-price-pin" style="top: 70%; left: 35%;">🏢 ₹50</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container text-center">
+      <h3>PARK-O-<span class="buddy">BUDDY</span></h3>
+      <p>PLAN. PAY. PARK.</p>
+      <p class="text-muted" style="margin-top: 10px;">&copy; 2026 PARK-O-BUDDY Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

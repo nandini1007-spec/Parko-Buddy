@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — PARK-O-BUDDY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🅿️</text></svg>">
+</head>
+<body>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🅿️</div>
+        <span>PARK-O-<span class="buddy">BUDDY</span></span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="search.html" class="nav-link">Find Parking</a></li>
+        <li><a href="host.html" class="nav-link">Rent Parking</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="auth.html" class="btn btn-outline btn-sm">Log In</a>
+        <a href="auth.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT: ABOUT -->
+  <main>
+    <div class="container about-hero">
+      <div class="eyebrow">OUR MISSION</div>
+      <h1 class="hero-title">Parking should be simple.</h1>
+      <p class="hero-subtitle">PARK-O-BUDDY connects drivers with people who have unused parking spaces nearby.</p>
+
+      <div class="problem-solution-grid">
+        <!-- Problem -->
+        <div class="problem-card">
+          <h3 style="color: #C53030; margin-bottom: 8px;">❌ The Problem</h3>
+          <p>“Drivers waste valuable time searching for parking while thousands of private parking spaces remain unused.”</p>
+          <div class="problem-list">
+            <div class="problem-item">😫 Frustrated drivers searching for 20+ mins</div>
+            <div class="problem-item">🚘 Crowded roads and heavy traffic congestion</div>
+            <div class="problem-item">⏱️ Wasted time, fuel, and energy</div>
+          </div>
+        </div>
+
+        <!-- Solution -->
+        <div class="solution-card">
+          <h3 style="color: var(--primary-green); margin-bottom: 8px;">✅ Our Solution</h3>
+          <p>“PARK-O-BUDDY connects drivers with people who have unused parking spaces nearby.”</p>
+          <div class="solution-diagram">
+            <div class="node">🚗<br>Parker</div>
+            <div class="arrow">&harr;</div>
+            <div class="node node-main">🅿️<br>PARK-O-BUDDY</div>
+            <div class="arrow">&harr;</div>
+            <div class="node">🏠<br>Host</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 Feature Cards -->
+      <h2 style="margin-top: 50px;">Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">📍 <h4>Nearby Parking</h4><p class="text-muted">Find available parking within walking distance of your destination.</p></div>
+        <div class="feature-card">💳 <h4>Secure Payments</h4><p class="text-muted">100% cashless, transparent pricing with zero hidden surcharges.</p></div>
+        <div class="feature-card">⭐ <h4>Trusted Hosts</h4><p class="text-muted">All private spots and hosts are identity-verified for safety.</p></div>
+        <div class="feature-card">🕒 <h4>Flexible Timings</h4><p class="text-muted">Book by the hour or day with easy instant extensions.</p></div>
+        <div class="feature-card">💰 <h4>Fair Pricing</h4><p class="text-muted">Save up to 40% compared to traditional expensive commercial garages.</p></div>
+        <div class="feature-card">📱 <h4>Easy Booking</h4><p class="text-muted">Reserve your slot in 3 simple clicks with instant entry QR passes.</p></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container text-center">
+      <h3>PARK-O-<span class="buddy">BUDDY</span></h3>
+      <p>PLAN. PAY. PARK.</p>
+      <p class="text-muted" style="margin-top: 10px;">&copy; 2026 PARK-O-BUDDY Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
